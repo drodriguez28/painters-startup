@@ -42,3 +42,15 @@ clientRouter.post('/', (req, res) => {
 
 
 
+//delete client
+clientRouter.delete('/:id', (req, res) => {
+    clientApi.deleteClient(req.params.id)
+      .then((deletedClient) => {
+        res.json(deletedClient)
+      })
+  })
+
+
+module.exports ={
+    clientRouter
+}
