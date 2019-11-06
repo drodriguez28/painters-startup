@@ -28,22 +28,48 @@ painterRouter.get('/:id', (req, res) => {
 })
 
 
+// create painter 
+painterRouter.post('/', (req, res) => {
+  painterApi.createPainter(req.body)
+    .then((createdPainter) => {
+      res.json(createdPainter)
+    })
+})
+
+
+// update painter
+painterRouter.put('/:id', (req, res) => {
+  painterApi.updatePainter(req.params.id, req.body)
+    .then((updatedPainter) => {
+      res.json(updatedPainter)
+    })
+})
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+//delete painter
+painterRouter.delete('/:id', (req, res) => {
+  painterApi.deletePainter(req.params.id)
+    .then((deletedPainter) => {
+      res.json(deletedPainter)
+    })
+})
 
 
 module.exports = {
   painterRouter
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
