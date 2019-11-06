@@ -1,21 +1,8 @@
-/* Step 1 import express
- *
- */
+
 const express = require('express')
 
-/* Step 2
- *
- * Import the api files from the models
- *
- * TODO: change the file path to the models file you'll need to use.
- * TODO: rename this from `templateApi` to something more sensible (e.g:
- * `shopsAPI`)
- *
- * NOTE: You may need to import more than one API to create the 
- * controller you need.
- * 
- */
-const templateApi = require('../models/template.js')
+
+const painterApi = require('../models/template.js')
 
 /* Step 3 
  * 
