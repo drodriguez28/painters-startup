@@ -4,34 +4,46 @@ const express = require('express')
 
 const painterApi = require('../models/template.js')
 
-/* Step 3 
- * 
- * Create a new router.
- *
- * the router will "contain" all the request handlers that you define in this file.
- * TODO: rename this from templateRouter to something that makes sense. (e.g:
- * `shopRouter`)
- */
-const templateRouter = express.Router()
 
-/* Step 4
- * 
- * TODO: Put all request handlers here
- */
+const painterRouter = express.Router()
 
-/* Step 5
- *
- * TODO: delete this handler; it's just a sample
- */ 
-templateRouter.get('/', (req, res) => {
-  res.json(templateApi.getHelloWorldString())
+//get all 
+
+painterRouter.get('/', (req, res) => {
+  painterApi.getAllPainters()
+    .then((allPainters) => {
+      console.log(allPainters)
+      res.json(allPainters)
+
+    })
 })
 
-/* Step 6
- *
- * Export the router from the file.
- *
- */
+
+// get one
+painterRouter.get('/:id', (req, res) => {
+  painterApi.getSinglePainter(req.params.id)
+    .then((singlePainter) => {
+      res.json(singlePainter)
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 module.exports = {
-  templateRouter
+  painterRouter
 }
