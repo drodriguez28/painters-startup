@@ -2,7 +2,7 @@
 const express = require('express')
 
 
-const painterApi = require('../models/template.js')
+const painterApi = require('../models/painterModel.js')
 
 
 const painterRouter = express.Router()
