@@ -14,13 +14,14 @@ export default class Painters extends Component {
     render() {
         return (
             <div>
-               <h1>{this.state.painters.map((painters)=>{
+                <h1>Painters Start-Up</h1>
+               {this.state.painters.map((painter)=>{
                    return(
                        <div>
-                           {painters.name}
+                          <h5>{painter.name}</h5> 
                        </div>
                    )
-               })}</h1> 
+               })}
             </div>
         )
     }
