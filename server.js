@@ -9,7 +9,7 @@ const app = express()
  */
 const { painterRouter } = require('./controllers/painterController.js')
 const { clientRouter } = require('./controllers/clientController.js')
-
+const {typeRouter}=require('./controllers/typeController.js')
 
 /* Step 3
  *
@@ -43,7 +43,7 @@ app.use(express.static(`${__dirname}/client/build`))
  */
 app.use('/api/painter', painterRouter)
 app.use('/api/client', clientRouter)
-
+app.use('/api/type', typeRouter)
 
 /* Step 5
  *
