@@ -46,3 +46,7 @@ typeRouter.delete('/:id', (req, res) => {
         res.json(deletedType)
       })
   })
+
+module.exports = {
+  typeRouter
+}
