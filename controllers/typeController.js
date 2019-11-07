@@ -37,4 +37,12 @@ typeRouter.post('/', (req, res) => {
         res.json(createdType)
       })
   })
+
   
+//delete type
+typeRouter.delete('/:id', (req, res) => {
+    typeApi.deleteType(req.params.id)
+      .then((deletedType) => {
+        res.json(deletedType)
+      })
+  })
