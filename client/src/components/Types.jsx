@@ -16,13 +16,13 @@ export default class Types extends Component {
         return (
             <div>
                 <h1>Paint Brands</h1>
-                <h1>{this.state.types.map((type)=>{
+                {this.state.types.map((type)=>{
                     return(
                         <div>
-                            {type.name}
+                           <h5>{type.name}</h5>
                         </div>
                     )
-                })}</h1>
+                })}
             </div>
         )
     }

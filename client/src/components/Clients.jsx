@@ -18,13 +18,13 @@ export default class Clients extends Component {
         return (
             <div>
                 <h1>Clients</h1>
-                <h1>{this.state.clients.map((client)=>{
+                {this.state.clients.map((client)=>{
                     return(
                         <div>
-                            {client.name}
+                           <h5>{client.name}</h5> 
                         </div>
                     )
-                })}</h1>
+                })}
             </div>
         )
     }
