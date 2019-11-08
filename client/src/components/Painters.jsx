@@ -11,6 +11,21 @@ export default class Painters extends Component {
             this.setState({painters: response.data})
         })
     }
+
+
+    createPainter =() =>{
+        
+    }
+
+    
+
+
+
+
+
+
+
+
     render() {
         return (
             <div>
