@@ -21,14 +21,6 @@ export default class Painters extends Component {
     }
 
     
-
-
-
-
-
-
-
-
     render() {
         return (
             <div>
