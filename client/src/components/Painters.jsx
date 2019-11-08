@@ -13,8 +13,11 @@ export default class Painters extends Component {
     }
 
 
-    createPainter =() =>{
-        
+    createPainter = () =>{
+        const newPainter ={
+
+        }
+        axios.post('/api/painter', newPainter)
     }
 
     
