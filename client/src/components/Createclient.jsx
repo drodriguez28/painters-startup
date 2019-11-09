@@ -54,20 +54,72 @@ export default class Createclient extends Component {
         return (
             <div>
                 <form onSubmit={this.addNewClient}>
-                    {this.state.redirect ?(<Redirect to={`/client${this.state.createdClientId}`}/>) :null}
+                    {this.state.redirect ? (<Redirect to={`/client${this.state.createdClientId}`} />) : null}
+
+                    <div>
+                        <input
+                            name="name"
+                            type="text"
+                            placeholder="name"
+                            value={this.state.newClient.name}
+                            onChange={this.handleNewClient}
+
+                        />
+                    </div>
+
+                    <div>
+                        <input
+                            name="typeofjob"
+                            type="text"
+                            placeholder="type of job"
+                            value={this.state.newClient.typeofjob}
+                            onChange={this.handleNewClient}
+
+                        />
+                    </div>
+
+                    <div>
+                        <input
+                            name="city"
+                            type="text"
+                            placeholder="city"
+                            value={this.state.newClient.city}
+                            onChange={this.handleNewClient}
+                        />
+                    </div>
 
 
+                    <div>
+                        <input
+                            name="state"
+                            type="text"
+                            placeholder="state"
+                            value={this.state.newClient.state}
+                            onChange={this.handleNewClient}
+                        />
+                    </div>
+                    <div>
+
+                        <input
+                            name="email"
+                            type="text"
+                            placeholder="email"
+                            value={this.state.newClient.email}
+                            onChange={this.handleNewClient}
+                        />
+                    </div>
 
 
+                    <div>
+                        <input
+                            type="submit"
+                            value="Create Client"
 
 
+                        />
 
 
-
-
-
-
-
+                    </div>
 
                 </form>
             </div>
