@@ -26,10 +26,13 @@ export default class Createclient extends Component {
 
 
         const newClient = {...this.state.newClient};
-        newClient
+        newClient[attributeName] = attributeValue;
+
+        this.setState({ newClient})
 
     }
 
+    
 
 
 
