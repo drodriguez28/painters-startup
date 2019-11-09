@@ -6,8 +6,8 @@ import Clients from './components/Clients';
 import Types from './components/Types';
 import Header from './components/Header';
 import CreatePainter from './components/Createpainter';
-import CreateClient from './components/Createclient'
-
+import CreateClient from './components/Createclient';
+import CreateType from './components/Createtype'
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           <Route exact path="/type" component={Types} />
           <Route exact path="/painter/new" component={CreatePainter} />
           <Route exact path="/client/new" component={CreateClient} />
+          <Route exact path="/type/new" component={CreateType}/>
 
         </Switch>
       </Router>

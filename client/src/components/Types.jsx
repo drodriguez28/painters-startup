@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from "axios"
+import { Link } from 'react-router-dom'
 
 
 export default class Types extends Component {
@@ -19,7 +20,7 @@ export default class Types extends Component {
                 {this.state.types.map((type)=>{
                     return(
                         <div>
-                           <h5>{type.name}</h5>
+                           <Link><h5>{type.name}</h5></Link>
                         </div>
                     )
                 })}

@@ -20,6 +20,13 @@ export default class Header extends Component {
                 <button>
                     <Link to="/client/new">Create Client</Link>
                 </button>
+                <button>
+                    <Link to="/type/new">Create Paint Brands</Link>
+                </button>
+
+
+
+
             </div>
         )
     }

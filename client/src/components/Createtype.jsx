@@ -81,7 +81,7 @@ export default class Createtype extends Component {
                     <div>
                         <input
                         type="submit"
-                        value="Create Paint" 
+                        value="Create Paint Brand" 
                         />
                     </div>
                 </form>
