@@ -25,14 +25,24 @@ export default class Createclient extends Component {
         const attributeValue = event.target.value;
 
 
-        const newClient = {...this.state.newClient};
+        const newClient = { ...this.state.newClient };
         newClient[attributeName] = attributeValue;
 
-        this.setState({ newClient})
+        this.setState({ newClient })
 
     }
 
-    addNewClient = 
+    addNewClient = (event) => {
+        event.preventDefault();
+
+        axios.post('/api/client', this.state.newClient)
+            .then(createdClient => {
+                const newState = { ...this.state }
+                newState.createdClientId = createdClient._id
+                newState.redirect = true
+                this.setState(newState)
+            })
+    }
 
 
 
@@ -43,7 +53,23 @@ export default class Createclient extends Component {
     render() {
         return (
             <div>
+                <form onSubmit={this.addNewClient}>
+                    {this.state.redirect ?(<Redirect to={`/client${this.state.createdClientId}`}/>) :null}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </form>
             </div>
         )
     }
