@@ -20,7 +20,7 @@ export default class Clients extends Component {
                 <h1>Clients</h1>
                 {this.state.clients.map((client)=>{
                     return(
-                        <div>
+                        <div key={client._id}>
                            <Link><h5>{client.name}</h5></Link> 
                         </div>
                     )

@@ -19,8 +19,8 @@ export default class Types extends Component {
                 <h1>Paint Brands</h1>
                 {this.state.types.map((type)=>{
                     return(
-                        <div>
-                           <Link><h5>{type.name}</h5></Link>
+                        <div key={type._id}>
+                           <Link ><h5>{type.name}</h5></Link>
                         </div>
                     )
                 })}

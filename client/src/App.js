@@ -7,7 +7,11 @@ import Types from './components/Types';
 import Header from './components/Header';
 import CreatePainter from './components/Createpainter';
 import CreateClient from './components/Createclient';
-import CreateType from './components/Createtype'
+import CreateType from './components/Createtype';
+import PainterDetails from './components/PainterDetails'
+
+
+
 
 function App() {
   return (
@@ -15,12 +19,13 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/painter" component={Painters} />
-          <Route exact path="/client" component={Clients} />
-          <Route exact path="/type" component={Types} />
+          <Route exact path="/painters/:id" component={PainterDetails} />
+          <Route exact path="/painters" component={Painters} />
+          <Route exact path="/clients" component={Clients} />
+          <Route exact path="/types" component={Types} />
           <Route exact path="/painter/new" component={CreatePainter} />
           <Route exact path="/client/new" component={CreateClient} />
-          <Route exact path="/type/new" component={CreateType}/>
+          <Route exact path="/type/new" component={CreateType} />
 
         </Switch>
       </Router>

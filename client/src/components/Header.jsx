@@ -6,13 +6,13 @@ export default class Header extends Component {
         return (
             <div>
                 <button>
-                    <Link to="/painter">Painter</Link>
+                    <Link to="/painters">Painters</Link>
                 </button>
                 <button>
-                    <Link to="/client">Clients</Link>
+                    <Link to="/clients">Clients</Link>
                 </button>
                 <button>
-                    <Link to="/type"> Paint Brands</Link>
+                    <Link to="/types"> Paint Brands</Link>
                 </button>
                 <button>
                     <Link to="/painter/new"> Create New Painter</Link>

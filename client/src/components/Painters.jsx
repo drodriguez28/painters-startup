@@ -8,27 +8,27 @@ export default class Painters extends Component {
     }
     componentDidMount = () => {
         axios.get('/api/painter')
-        .then((response)=>{
-            this.setState({painters: response.data})
-        })
+            .then((response) => {
+                this.setState({ painters: response.data })
+            })
     }
 
 
-    
 
-    
+
+
     render() {
         return (
             <div>
                 <h1>Painters Start-Up</h1>
-               {this.state.painters.map((painter)=>{
-                   return(
-                       <div>
-                           <Link><h5>{painter.name}</h5></Link>
-                           
-                       </div>
-                   )
-               })}
+                {this.state.painters.map((painter) => {
+                    return (
+                        <div key={painter._id}> 
+                            <Link to={"/painters/" + painter._id}><h5>{painter.name}</h5></Link>
+
+                        </div>
+                    )
+                })}
             </div>
         )
     }
