@@ -20,7 +20,15 @@ export default class Createclient extends Component {
         },
         createdClientId: null
     }
+    handleNewClient = (event) => {
+        const attributeName = event.target.name;
+        const attributeValue = event.target.value;
 
+
+        const newClient = {...this.state.newClient};
+        newClient
+
+    }
 
 
 
