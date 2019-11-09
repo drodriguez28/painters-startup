@@ -11,15 +11,16 @@ export default class Createclient extends Component {
     state = {
         redirect: false,
         newClient: {
-            name:"",
-            typeofjob:"",
-            city:"",
-            state:"",
-            email:""
+            name: "",
+            typeofjob: "",
+            city: "",
+            state: "",
+            email: ""
 
         },
         createdClientId: null
     }
+
 
 
 
