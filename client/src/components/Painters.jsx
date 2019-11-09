@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from "axios"
+import { Link } from 'react-router-dom'
 
 export default class Painters extends Component {
     state = {
@@ -13,12 +14,7 @@ export default class Painters extends Component {
     }
 
 
-    createPainter = () =>{
-        const newPainter ={
-
-        }
-        axios.post('/api/painter', newPainter)
-    }
+    
 
     
     render() {
@@ -28,7 +24,8 @@ export default class Painters extends Component {
                {this.state.painters.map((painter)=>{
                    return(
                        <div>
-                          <h5>{painter.name}</h5> 
+                           <Link><h5>{painter.name}</h5></Link>
+                           
                        </div>
                    )
                })}
