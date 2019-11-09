@@ -8,9 +8,9 @@ import Header from './components/Header';
 import CreatePainter from './components/Createpainter';
 import CreateClient from './components/Createclient';
 import CreateType from './components/Createtype';
-import PainterDetails from './components/PainterDetails'
-import ClientDetails from './components/ClientDetails'
-
+import PainterDetails from './components/PainterDetails';
+import ClientDetails from './components/ClientDetails';
+import TypesDetails from './components/TypeDetails'
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
           <Route exact path="/painters" component={Painters} />
           <Route exact path="/clients/:id" component={ClientDetails}/>
           <Route exact path="/clients" component={Clients} />
+          <Route exact path="/types/:id" component={TypesDetails}/>
           <Route exact path="/types" component={Types} />
           <Route exact path="/painter/new" component={CreatePainter} />
           <Route exact path="/client/new" component={CreateClient} />

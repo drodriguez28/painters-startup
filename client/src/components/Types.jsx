@@ -20,7 +20,7 @@ export default class Types extends Component {
                 {this.state.types.map((type)=>{
                     return(
                         <div key={type._id}>
-                           <Link ><h5>{type.name}</h5></Link>
+                           <Link to={"/types/" +type._id} ><h5>{type.name}</h5></Link>
                         </div>
                     )
                 })}
