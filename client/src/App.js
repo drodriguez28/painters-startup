@@ -9,7 +9,7 @@ import CreatePainter from './components/Createpainter';
 import CreateClient from './components/Createclient';
 import CreateType from './components/Createtype';
 import PainterDetails from './components/PainterDetails'
-
+import ClientDetails from './components/ClientDetails'
 
 
 
@@ -21,6 +21,7 @@ function App() {
         <Switch>
           <Route exact path="/painters/:id" component={PainterDetails} />
           <Route exact path="/painters" component={Painters} />
+          <Route exact path="/clients/:id" component={ClientDetails}/>
           <Route exact path="/clients" component={Clients} />
           <Route exact path="/types" component={Types} />
           <Route exact path="/painter/new" component={CreatePainter} />
