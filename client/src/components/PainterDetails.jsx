@@ -13,6 +13,8 @@ export default class PainterDetails extends Component {
             this.setState({ deleted: true})
             console.log(response)
         })
+        
+ 
     }
 
 
