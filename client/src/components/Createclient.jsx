@@ -32,7 +32,7 @@ export default class Createclient extends Component {
 
     }
 
-    
+    addNewClient = 
 
 
 
