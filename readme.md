@@ -27,3 +27,6 @@ Languages Used
 - more pictures 
 - better layout
 - Fully crud
+
+![wire](/wireframe.jpg)
+![erd](/erd.jpg)
