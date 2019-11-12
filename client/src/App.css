@@ -44,6 +44,18 @@ h1{
   font-size: 60px;
   
 }
+footer{
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  border: none;
+  background-size: 300px 100px;
+   
+}
+footer img{
+  width: 500px;
+  height: 200px;
 
+}
 
 
