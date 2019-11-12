@@ -1,8 +1,10 @@
 # Painters Start-Up
 
 
-(Painters Start-Up) [https://el-don-elver.herokuapp.com/painters]
-[Github Project Board] (https://git.generalassemb.ly/drodriguez28/project-3.git)
+[Painters Start-Up]("https://el-don-elver.herokuapp.com/painters")
+
+
+[Github Project Board]("https://git.generalassemb.ly/drodriguez28/project-3.git")
 
 
 
