@@ -58,7 +58,7 @@ export default class Createpainter extends Component {
             <div>
                 <form onSubmit={this.addNewPainter}>
 
-                    {this.state.redirect ? (<Redirect to={`/painter${this.state.createdPainterId}`} />) : null}
+                    {this.state.redirect ? (<Redirect to={`/painters`} />) : null}
 
                     <div>
                         <input
@@ -82,7 +82,7 @@ export default class Createpainter extends Component {
                     <div>
                         <input
                             name="age"
-                            type="text"
+                            type="number"
                             placeholder="age"
                             value={this.state.newPainter.age}
                             onChange={this.handleNewPainter}

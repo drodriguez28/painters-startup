@@ -4,7 +4,13 @@ import axios from "axios"
 export default class ClientDetails extends Component {
 
     state = {
-        client: {}
+        client: {
+            name:"",
+            typeofjob:"",
+            city:"",
+            state:"",
+            email:"",
+        }
     }
 
     deleteClient = () => {
@@ -33,9 +39,9 @@ export default class ClientDetails extends Component {
                     Client was deleted
                 </div>
             )
-        } else {
-            return (
-                <div>
+            } else {
+                return(
+             <div>
                     <h1>Client's Info</h1>
                     <h5>name: {this.state.client.name}</h5>
                     <h5>typeofjob: {this.state.client.typeofjob}</h5>

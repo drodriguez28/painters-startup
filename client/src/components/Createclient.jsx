@@ -54,7 +54,7 @@ export default class Createclient extends Component {
         return (
             <div>
                 <form onSubmit={this.addNewClient}>
-                    {this.state.redirect ? (<Redirect to={`/client${this.state.createdClientId}`} />) : null}
+                    {this.state.redirect ? (<Redirect to={`/clients`} />) : null}
 
                     <div>
                         <input

@@ -46,7 +46,7 @@ export default class Createtype extends Component {
         return (
             <div>
                 <form onSubmit={this.addNewType}>
-                    {this.state.redirect ? (<Redirect to={`/type${this.state.createdTypeId}`} />) : null}
+                    {this.state.redirect ? (<Redirect to={`/types`} />) : null}
 
                     <div>
                         <input
@@ -81,7 +81,7 @@ export default class Createtype extends Component {
                     <div>
                         <input
                         type="submit"
-                        value="Create Paint Brand" 
+                        value="Create Paint" 
                         />
                     </div>
                 </form>
